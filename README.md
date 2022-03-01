@@ -4,7 +4,7 @@
 
 ## Introduction
 
-I was on the market for a cheap mechnical keyboard with a reduced footprint for my desk. After a quick, uninformed marketplace search, I purchased a cheap 60% mechanical keyboard from a China-based seller on eBay. I also bought some cheap keycaps to replace the stock "gamer" ones. The keyboard itself is unbranded except for the "DK61" model number on the back. There quite a lot of YouTube reviews calling this keyboard a Anne Pro 2 or RK61 clone.
+I was on the market for a cheap mechnical keyboard with a reduced footprint for my desk. After a quick, uninformed marketplace search, I purchased a cheap 60% mechanical keyboard from a China-based seller on eBay. I also bought some cheap keycaps to replace the stock "gamer" ones. The keyboard itself is unbranded except for the "DK61" model number on the back. There are a few YouTube reviews that describe this keyboard as a "Anne Pro 2" or "RK61" clone.
 
 > Although they share the same model number, this is not the exact same product as the Dierya / Kemove DK61.
 
@@ -63,7 +63,7 @@ Here's a summary of the details:
 
 There are some interesting design choices in the default firmware. The key mapping for the arrow keys are unintuitive. For example, you have to hold down Fn + W for 3 secs to have WASD swap to arrow keys, then Fn + W to go back - super slow! The numpad functions were also difficult to remember due to their positioning. Thus began the next phase of research - flashing alternative firmware.
 
-To start my alternative firmware experiment, I attempted to flash several other keyboard's stock firmwares as an experiment. As mentioned previously, this keyboard has 05AC:024F as the hardware ID (VID/PID). This is the combination for the Apple Magic Keyboard, but can also be found on early Keychrons as well as some versions of the Royal Kludge RK61. Most stock keyboard firmwares that are based on the HFD ISP Tool seem to work, though some check for a supported USB HID device via hardware ID.
+To start my alternative firmware experiment, I attempted to flash several other keyboard's stock firmwares. As mentioned previously, this keyboard has 05AC:024F as the hardware ID (VID/PID). This is the combination for the Apple Magic Keyboard, but can also be found on early Keychrons as well as some versions of the Royal Kludge RK61. Most stock keyboard firmwares that are based on the HFD ISP Tool seem to work, though some check for a supported USB HID device via hardware ID.
 
 ![A photo of the HFD ISP Tool.](article_images/Image-3.jpg)
 
