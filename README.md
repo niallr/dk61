@@ -1,4 +1,4 @@
-> This write-up has been merged into the main blog over at [niall.pages.dev/](https://niall.pages.dev/). I also made much more progress (read: flashed QMK successfully) on the board. Instructions can be found at the blog.
+> This write-up has been merged into the main blog over at [niall.pages.dev](https://niall.pages.dev/). I also made much more progress (read: flashed QMK successfully) on the board. Instructions can be found at the blog.
 
 # DK61 / Hiwings HI200 / oneone nya / FEKER Machinist 01 / Gamdias Hermes E3
 
