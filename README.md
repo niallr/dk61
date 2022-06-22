@@ -1,10 +1,10 @@
 # DK61 / Hiwings HI200 / oneone nya / FEKER Machinist 01 / Gamdias Hermes E3
 
-> This article is a work in progress. The information attempts to be as accurate as possible at the time of writing.
+> The information in this article attempts to be as accurate as possible at the time of writing.
 
 ## Introduction
 
-I was on the market for a cheap mechnical keyboard with a reduced footprint for my desk. After a quick, uninformed marketplace search, I purchased a cheap 60% mechanical keyboard from a China-based seller on eBay. I also bought some cheap keycaps to replace the stock "gamer" ones. The keyboard itself is unbranded except for the "DK61" model number on the back. There are a few YouTube reviews that describe this keyboard as a "Anne Pro 2" or "RK61" clone.
+I was on the market for a cheap mechanical keyboard with a reduced footprint for my desk. After a quick, uninformed marketplace search, I purchased a cheap 60% mechanical keyboard from a China-based seller on eBay. I also bought some cheap keycaps to replace the stock "gamer" ones. The keyboard itself is unbranded except for the "DK61" model number on the back. There are a few YouTube reviews that describe this keyboard as a "Anne Pro 2" or "RK61" clone.
 
 > Although they share the same model number, this is not the exact same product as the Dierya / Kemove DK61.
 
@@ -25,6 +25,7 @@ After analysis of similar products while considering the key order and the defau
 > Not all of the products listed below have Bluetooth. They could be a combination of wired, 2.4G wireless and Bluetooth.
 
 Here are a few examples:
+
 - Hiwings HI200
 - GOCOMMA DK61
 - Magic Refiner MK25
@@ -71,7 +72,9 @@ The most successful was flashing the Keychron K12 stock firmware (which uses the
 
 ## Software
 
-I attempted to use the customisation software of similar keyboards with the out of the box firmware. These tools allow some basic customisation of key mapping and RGB LED values, as well as creation of basic macro automations. ultimately the bottom right order can be troublesome. All of these software are reskins of the same software 'GamingForceZ RGB Keyboard v1.10.000n' by SONiX (NB: see the _"GamingKeyboard*.dll"_ files found all of the variants), and have the same features and UI (apart from Drevo Power Console, which has the same functionality but with a more modern UI experience). Some of the variants do check for their specific keyboard (I assume via hardware ID) and will display a Device Not Found error, but these are the minority. Amusingly, all of the variants have the same metadata for their _"GamingKeyboard*.dll"_ files:
+I attempted to use the customisation software of similar keyboards with the out of the box firmware. These tools allow some basic customisation of key mapping and RGB LED values, as well as creation of basic macro automations. A common issue between these firmwares was that the order of the 4 bottom right keys were either messed up or some of those keys would not work.
+
+All of the different tested software were reskins of the same software 'GamingForceZ RGB Keyboard v1.10.000n' by SONiX (NB: see the _"GamingKeyboard*.dll"_ files found all of the variants), and have the same features and UI (apart from Drevo Power Console, which has the same functionality but with a more modern UI experience). Some of the variants do check for their specific keyboard (I assume via hardware ID) and will display a Device Not Found error, but these are the minority. Amusingly, all of the variants have the same metadata for their _"GamingKeyboard*.dll"_ files:
 
 | Attribute      | Value |
 | ----------- | ----------- |
@@ -93,6 +96,7 @@ I attempted to use the customisation software of similar keyboards with the out 
 ![A photo of the GamingForceZ keyboard software.](article_images/Image-11.jpg)
 
 Here are a few examples of the software variants as per their installation name. Most of these worked for this keyboard to some degree, but I recommend checking the key layout of the particular keyboard that was in mind for each variant:
+  
 - FEKER Machinist01
 - Horizon Z Gaming Keyboard Driver
 - Drevo Power Console
@@ -109,7 +113,7 @@ Here are a few examples of the software variants as per their installation name.
 
 ## Firmware: Part 2
 
-Still wanting additional control over this keyboard, internet searches led me to a custom firmware project called [QMK](https://qmk.fm/). I was then led to the flavour that was relevant to my keyboard's MCU - [SonixQMK](https://github.com/SonixQMK/qmk_firmware).
+Still wanting additional control over this keyboard and attempting to fix the bottom right key issues, internet searches led me to a custom firmware project called [QMK](https://qmk.fm/). I was then led to the flavour that was relevant to my keyboard's MCU - [SonixQMK](https://github.com/SonixQMK/qmk_firmware).
 
 The MCU for the keyboard is a HFD chip. HFD and EVision chips are common rebrands of SONiX SN32-based chips.
 
@@ -119,7 +123,7 @@ To flash QMK with this type of chip, you would usually need to put the keyboard 
 
 > At the time of writing, QMK does not support / provide Bluetooth functionality.
 
-Through further digging and support from The Sonix Keyboard Hacking Community that maintain SonixQMK, I managed to install a release of SonixQMK on the keyboard - without touching the BOOT pin. The process was as follows:
+Through further digging and support from The Sonix Keyboard Hacking Community that maintain SonixQMK, I managed to install a release of SonixQMK on the keyboard without touching the BOOT pin. The process was as follows:
 
 1. Install the Flashquark Horizon Z stock firmware ("Horizon Z Firmware Flasher 1.1 202006.exe"). The executable uses the HFD ISP Tool for the flashing process. After successful flash, all functionality of the Horizon Z works (including Bluetooth and key combinations) except there is one dead key (Alt key on the original keyboard. It also lights up green or light pink regardless of RGB LED configuration).
 
