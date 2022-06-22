@@ -1,3 +1,5 @@
+> This write-up has been merged into the main blog over at [niall.pages.dev/](https://niall.pages.dev/). I also made much more progress (read: flashed QMK successfully) on the board. Instructions can be found at the blog.
+
 # DK61 / Hiwings HI200 / oneone nya / FEKER Machinist 01 / Gamdias Hermes E3
 
 > The information in this article attempts to be as accurate as possible at the time of writing.
